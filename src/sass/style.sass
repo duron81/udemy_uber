@@ -372,6 +372,7 @@ nav
     font-size: 15px
     text-align: center
     text-transform: uppercase
+    text-decoration: none
     color: #1FBAD6
   .black
     position: absolute
@@ -382,48 +383,68 @@ nav
     height: 716px
     z-index: -1
 .footer
-  min-height: 134px
-  margin: 11px 0 11px 0
-  .divider
-    display: block
+  &_divider
     width: 301px
     height: 7px
     background: #1FBAD6
     margin: 0 auto
-  &_header
-    margin-top: 32px
-    list-style-type: none
-    font-weight: 300
-    font-size: 15px
-    text-transform: uppercase
-    text-align: center
-    padding: 0
-    li
-      display: inline-block
-      margin: 0 22px
+  &_wrapper
+    display: flex
+    justify-content: space-between
+    align-items: flex-start
+    padding-top: 32px
+  &_wrapper>div
+    width: 33%
+    &:nth-child(3)
+      display: flex
+      justify-content: flex-end
+  &_social
+    max-width: 160px
+    display: flex
+    justify-content: space-between
+    margin-left: 20px
+    &_round
+      display: flex
+      justify-content: center
+      align-items: center
+      width: 35px
+      height: 35px
+      margin: 0 2px
+      border-radius: 100%
+      background: #070716
+  &_links
+    width: 390px
+    margin: 0 auto
+    &_main
+      display: flex
+      justify-content: space-between
+      padding: 0 10 px
       a
+        font-weight: 300
+        font-size: 15px
+        text-transform: uppercase
         color: #070716
         text-decoration: none
-  &_subheader
-    margin-top: 15px
-    list-style-type: none
-    font-weight: 300
-    font-size: 11px
-    text-transform: uppercase
-    text-align: center
-    padding: 0
-    li
-      display: inline-block
-      margin: 0 12px
+    &_sub
+      display: flex
+      justify-content: space-between
+      margin-top: 10px
       a
+        list-style-type: none
+        font-weight: 300
+        font-size: 11px
+        text-transform: uppercase
         color: #999999
         text-decoration: none
   &_language
     display: block
     margin: 0 auto
+    margin-top: 20px
     text-align: center
     text-decoration: none
     font-weight: 400
     font-size: 11px
     text-transform: uppercase
     color: #1FBAD6
+  &_apps
+    margin-right: 20px
